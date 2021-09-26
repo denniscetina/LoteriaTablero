@@ -22,6 +22,7 @@ public class Tablero extends javax.swing.JFrame {
     public Tablero() {
         initComponents();
         setLocationRelativeTo(null);
+        setResizable(false);
         ImageIcon img[] = new ImageIcon[117];
         int pos;
         int nCartas = 16;
