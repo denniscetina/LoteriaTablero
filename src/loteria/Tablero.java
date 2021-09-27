@@ -23,10 +23,10 @@ public class Tablero extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
-        ImageIcon img[] = new ImageIcon[117];
+        ImageIcon img[] = new ImageIcon[55];
         int pos;
-        int nCartas = 16;
-        int[] numeros = new int[17];
+        int nCartas = 53;
+        int[] numeros = new int[55];
         Stack< Integer> pCartas = new Stack< Integer>();
         for (int i = 0; i < nCartas; i++) {
             pos = (int) Math.floor(Math.random() * nCartas);
@@ -127,7 +127,7 @@ public class Tablero extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new java.awt.GridLayout());
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
         uno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1.png"))); // NOI18N
         uno.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -167,7 +167,7 @@ public class Tablero extends javax.swing.JFrame {
         });
         jPanel1.add(cuatro);
 
-        jPanel2.setLayout(new java.awt.GridLayout());
+        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
         cinco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/5.png"))); // NOI18N
         cinco.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -206,7 +206,7 @@ public class Tablero extends javax.swing.JFrame {
         });
         jPanel2.add(ocho);
 
-        jPanel3.setLayout(new java.awt.GridLayout());
+        jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
         nueve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/9.png"))); // NOI18N
         nueve.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -245,7 +245,7 @@ public class Tablero extends javax.swing.JFrame {
         });
         jPanel3.add(doce);
 
-        jPanel4.setLayout(new java.awt.GridLayout());
+        jPanel4.setLayout(new java.awt.GridLayout(1, 0));
 
         trece.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/13.png"))); // NOI18N
         trece.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -300,10 +300,9 @@ public class Tablero extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
